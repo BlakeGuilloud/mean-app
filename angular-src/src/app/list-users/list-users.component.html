@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>Users</h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user._id}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>
+          <button class="btn btn-danger btn-sm" type="button" (click)="deleteUser(user); $event.stopPropagation();">
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <app-add-user (addUser)='onAddUser($event)'></app-add-user>
+</div>

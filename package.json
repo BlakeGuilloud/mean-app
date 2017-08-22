@@ -1,0 +1,16 @@
+{
+  "name": "mean-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Blake Guilloud",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.7"
+  },
+  "scripts": {
+    "start": "node app"
+  }
+}
